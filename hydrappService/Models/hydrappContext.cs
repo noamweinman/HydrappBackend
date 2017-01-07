@@ -21,7 +21,9 @@ namespace hydrappService.Models
         public hydrappContext() : base(connectionStringName)
         {
         } 
-        
+
+        public DbSet<TodoItem> TodoItems { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(
@@ -29,7 +31,7 @@ namespace hydrappService.Models
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
 
-        public DbSet<TestItem> TestItems { get; set; }
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.TestItem> TestItems { get; set; }
     }
 
 }
