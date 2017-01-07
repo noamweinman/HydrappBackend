@@ -32,6 +32,8 @@ namespace hydrappService.Models
         }
 
         public System.Data.Entity.DbSet<hydrappService.DataObjects.TestItem> TestItems { get; set; }
+
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.User> Users { get; set; }
     }
 
 }
