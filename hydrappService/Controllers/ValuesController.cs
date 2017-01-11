@@ -17,7 +17,7 @@ namespace hydrappService.Controllers
             ITraceWriter traceWriter = this.Configuration.Services.GetTraceWriter();
 
             string host = settings.HostName ?? "localhost";
-            string greeting = "Hello from " + host;
+            string greeting = "Hey Ben!!! your paged looks like shit! " + host;
             
             traceWriter.Info(greeting);
             return greeting;

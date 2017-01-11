@@ -90,6 +90,7 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web.Http">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
@@ -155,12 +156,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
+    <Compile Include="Controllers\BandController.cs" />
+    <Compile Include="Controllers\BandEntryController.cs" />
+    <Compile Include="Controllers\GroupController.cs" />
+    <Compile Include="Controllers\GroupMemberController.cs" />
     <Compile Include="Controllers\TestItemController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataObjects\BandEntry.cs" />
+    <Compile Include="DataObjects\Band.cs" />
+    <Compile Include="DataObjects\GroupMember.cs" />
     <Compile Include="DataObjects\TestItem.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
+    <Compile Include="DataObjects\Group.cs" />
     <Compile Include="DataObjects\User.cs" />
     <Compile Include="Models\hydrappContext.cs" />
     <Compile Include="Startup.cs" />

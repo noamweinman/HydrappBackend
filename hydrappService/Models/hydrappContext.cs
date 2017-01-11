@@ -34,6 +34,14 @@ namespace hydrappService.Models
         public System.Data.Entity.DbSet<hydrappService.DataObjects.TestItem> TestItems { get; set; }
 
         public System.Data.Entity.DbSet<hydrappService.DataObjects.User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.Group> Groups { get; set; }
+
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.GroupMember> GroupMembers { get; set; }
+
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.Band> Bands { get; set; }
+
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.BandEntry> BandEntries { get; set; }
     }
 
 }
