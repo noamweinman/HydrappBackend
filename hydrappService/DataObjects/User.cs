@@ -11,10 +11,10 @@ namespace hydrappService.DataObjects
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
-        public string userName { get; set; }
-        public string password { get; set; }
-        public string email { get; set; }
-        public double height { get; set; }
-        public double weight { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public double Height { get; set; }
+        public double Weight { get; set; }
     }
 }
