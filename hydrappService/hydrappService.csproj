@@ -156,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
+    <Compile Include="Controllers\ActivityController.cs" />
     <Compile Include="Controllers\BandController.cs" />
     <Compile Include="Controllers\BandEntryController.cs" />
     <Compile Include="Controllers\GroupController.cs" />
@@ -163,7 +164,10 @@
     <Compile Include="Controllers\TestItemController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserHydrateLvlController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataObjects\UserHydrateLvl.cs" />
+    <Compile Include="DataObjects\Activity.cs" />
     <Compile Include="DataObjects\BandEntry.cs" />
     <Compile Include="DataObjects\Band.cs" />
     <Compile Include="DataObjects\GroupMember.cs" />
@@ -188,6 +192,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Hydrapp - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\hydrapp - Web Deploy.pubxml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

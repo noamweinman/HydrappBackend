@@ -42,6 +42,9 @@ namespace hydrappService.Models
         public System.Data.Entity.DbSet<hydrappService.DataObjects.Band> Bands { get; set; }
 
         public System.Data.Entity.DbSet<hydrappService.DataObjects.BandEntry> BandEntries { get; set; }
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.Activity> Activities { get; set; }
+
+        public System.Data.Entity.DbSet<hydrappService.DataObjects.UserHydrateLvl> UserHydrateLvls { get; set; }
     }
 
 }

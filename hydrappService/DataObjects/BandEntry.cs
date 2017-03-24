@@ -10,6 +10,7 @@ namespace hydrappService.DataObjects
     public class BandEntry: EntityData
     {
         public DateTime TimeStamp { get; set; }
+        public int ActivityId { get; set; }
         public int GroupId { get; set; }
         public int UserId { get; set; }
         public int BandId { get; set; }
